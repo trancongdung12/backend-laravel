@@ -17,6 +17,9 @@ class ProductController extends Controller
     }
     function category(){
         $category = Category::all();
+        foreach($category as $item){
+            $item->products;
+        }
         return $category;
     }
     function detail($id){
