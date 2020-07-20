@@ -1,0 +1,38 @@
+ .map{
+    margin-left: 30px;
+    margin-top: 20px;
+   }
+   .card{
+       width: 100%;
+       display: flex;
+   }
+   .card .user{
+       background-color: #fbad4c;
+   }
+   .card .order{
+       background-color: #59d05d;
+   }
+   .card .product{
+       background-color: #ff646d;
+   }
+   .card .money{
+       background-color: #1D62F0;
+   }
+   .card-item{
+       display: flex;
+       margin-left: 30px;
+       width: 300px;
+       height: 100px;
+       color: white;
+       padding: 0 50px;
+   
+   }
+   .card-item i{
+       margin-top: 30px;
+       font-size: 30px;
+   }
+   .card-item span{
+       margin-top: 30px;
+       font-size: 20px;
+       margin-left: 70px;
+   }

@@ -1,0 +1,67 @@
+/* ************ PRODUCT ************* */
+
+.content-control{
+    display: flex !important;
+    width: 100%;
+}
+.form-control{
+    color: #575962;
+    font-size: 18px;
+    width: 40%;
+    background-color: white;
+    padding: 20px;
+}
+
+.form-control .form-item  p{
+    margin-left: 10px;
+}
+.form-control .form-item input{
+    height: 30px;
+    margin-left: 10px;
+    width: 95%;
+    outline: none;
+}
+.form-control .form-item select{
+    height: 40px;
+    margin-left: 10px;
+    width: 96%;
+}
+.table {
+    margin-left: 20px;
+    width: 55%;
+    background-color: white;
+    border-collapse: collapse;
+}
+th{
+    background-color: #23CCEF;
+    color: white;
+    height: 50px;
+}
+th:last-child{
+    width: 150px;
+}
+td{
+    padding: 10px;
+}
+table, th, td {
+    border: 1px solid #23CCEF;
+  }
+.btn-success{
+    background-color: #59d05d;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+}
+td:last-child{
+    display: flex;
+}
+.btn{
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 20px;
+}
+.red{
+    background-color: red;
+}

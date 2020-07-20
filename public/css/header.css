@@ -1,0 +1,97 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:  #f2f3f8;
+}
+ /* ********* nav bar ************ */
+
+.nav{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+}
+.nav .nav-header{
+    line-height: 50px;
+    width: 15%;
+    height: 50px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.nav .nav-header a{ 
+    font-size: 20px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: black ;
+}
+.nav .nav-bar{
+    width: 85%;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+.nav .nav-bar .nav-content{
+    display: flex;
+    margin-left: 83%;
+    line-height: 50px;
+}
+.nav .nav-bar .nav-content .nav-item{
+    margin-left: 25px;
+}
+.nav .nav-bar .nav-content .nav-item i{
+    font-size: 20px;
+}
+.nav .nav-bar .avatar{
+    display: flex;
+    width: 35px;
+    height: 35px;
+}
+.nav .nav-bar .avatar img{
+    margin-right: 10px;
+    margin-top: 8px;
+    border-radius: 100%;
+}
+.nav .nav-bar .avatar i{
+    font-size: 12px !important;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.nav .dropdown-content{
+    display: none;
+}
+ /* ********* side bar ************ */
+.container{
+    width: 100%;
+    display: flex;
+}
+.side-bar{
+    overflow: hidden;
+    position: fixed;
+    top:51px;
+    width: 15%;
+    height: 705px;
+    background-color: white;
+    border-right: 1px solid #ddd;
+}
+.side-bar .side-content{
+    padding: 50px 30px;
+}
+.side-bar .side-content .side-item{
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.side-bar .side-content .side-item a{
+    text-decoration: none;
+    color: black;
+}
+.side-bar .side-content .side-item  i{
+    margin-right: 10px;
+}
+.content{
+    margin-left: 15%;
+    margin-top: 50px;
+    width: 82%;    
+    padding: 20px;
+}
