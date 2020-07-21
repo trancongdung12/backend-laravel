@@ -11,7 +11,7 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        $category = array('ao','quan','giay','dep');
+        $category = array('GIÀY SNEAKER','GIÀY CONVERSE','GIÀY ADIDAS','GIÀY VANS');
         for($i = 0 ;$i<count($category);$i++){
         DB::table('categories')->insert([
             'name' =>$category[$i],

@@ -24,7 +24,6 @@ class ProductController extends Controller
     }
     function detail($id){
         $products = Product::find($id);
-        $products->category;
         return $products;
     }
 }

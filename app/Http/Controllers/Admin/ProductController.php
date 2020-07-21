@@ -30,7 +30,7 @@ class ProductController extends Controller
         $product= new Product;
         $product->name= $name;
         $product->category_id= $category_id;
-        $product->image= $image;
+        $product->image= "/storage/".$image;
         $product->price= $price;
         $product->quantity= $quantity;
         $product->description= $description;
@@ -60,11 +60,12 @@ class ProductController extends Controller
             if($image == null){
                 $image = $product->image;
             }else{
-                $image-> store("public");
+                $image = $request->file("image")->store("public");
             }
             $product->name= $name;
             $product->category_id= $category_id;
             $product->price= $price;
+            $product->image = '/storage/'.$image;
             $product->quantity= $quantity;
             $product->description= $description;
             $product->save();
