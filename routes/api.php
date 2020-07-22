@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //USER
-Route::post('/register','API\UserController@register');
-Route::post('/login','API\UserController@login');
+Route::post('auth/register','API\AuthController@register');
+Route::post('auth/login','API\AuthController@login');
 //PRODUCT
 Route::get('/product','API\ProductController@product');
 Route::get('/category','API\ProductController@category');
