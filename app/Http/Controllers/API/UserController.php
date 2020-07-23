@@ -11,7 +11,7 @@ use App\User;
 use \Firebase\JWT\JWT;
 class UserController extends Controller
 {
-    function getUserById(){
+    function getUserByToken(){
         $token  = request()->header('Authorization');
         $key = "example_key";
         $decoded = JWT::decode($token, $key, array('HS256'));

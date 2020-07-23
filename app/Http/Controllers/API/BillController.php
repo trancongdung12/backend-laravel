@@ -30,4 +30,13 @@ class BillController extends Controller
         $responseData = array("data"=>null);
         return response()->json($responseData, 200);
     }
+    function getBillByToken(){
+        $token  = request()->header('Authorization');
+        $key = "example_key";
+        $decoded = JWT::decode($token, $key, array('HS256'));
+        $userId = $decoded->user_id;
+        $bill = Bill::where("user_id",$userId)->get();
+        $responseData = array("data"=>$bill);
+        return response()->json($responseData, 200);
+    }
 }

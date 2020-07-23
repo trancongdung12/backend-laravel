@@ -17,13 +17,14 @@ use Illuminate\Support\Facades\Route;
 Route::post('auth/register','API\AuthController@register');
 Route::post('auth/login','API\AuthController@login');
 
-//LOGIN
+//BILL
 Route::post('/bill','API\BillController@store');
-
+Route::get('/bill','API\BillController@getBillByToken');
 //PRODUCT
 Route::get('/product','API\ProductController@product');
 Route::get('/category','API\ProductController@category');
 Route::get('/product/{id}','API\ProductController@detail');
 
-//BILL
-Route::post('auth/login','API\AuthController@login');
+//USER
+Route::get('user/name','API\UserController@getNameByToken');
+Route::get('user/profile','API\UserController@getUserByToken');
