@@ -20,6 +20,7 @@ Route::post('auth/login','API\AuthController@login');
 //BILL
 Route::post('/bill','API\BillController@store');
 Route::get('/bill','API\BillController@getBillByToken');
+Route::delete('/bill/{id}','API\BillController@destroyBillById');
 //PRODUCT
 Route::get('/product','API\ProductController@product');
 Route::get('/category','API\ProductController@category');
