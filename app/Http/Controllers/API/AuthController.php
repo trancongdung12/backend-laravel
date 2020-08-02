@@ -33,7 +33,6 @@ class AuthController extends Controller
                 "user_id"=>$userId
             );
             $token = JWT::encode($value, $key);
-            
             $responseData = array("data"=>$token);
             return response()->json($responseData, 200);
         }else{

@@ -20,7 +20,7 @@
                     <div class="nav-item avatar dropdown">
                         <img src="https://cdn.icon-icons.com/icons2/1857/PNG/512/hacker_117746.png" alt="avatar"  width="100%" height="100%">
                         <span>Admin</span>
-                        <i class="fa fa-caret-down"></i> 
+                        <i class="fa fa-caret-down"></i>
                     </div>
                </div>
             </div>
@@ -31,12 +31,13 @@
                     <li class="side-item"><a href="/"> <i class="fa fa-tachometer-alt"></i>Dashboard</a></li>
                     <li class="side-item"><a href="/admin/product"> <i class="far fa-keyboard"></i>Product</a></li>
                     <li class="side-item"><a href="/admin/category"> <i class="far fa-keyboard"></i>Category</a></li>
+                    <li class="side-item"><a href="/admin/message"> <i class="far fa-comments"></i>Message</a></li>
                     <li class="side-item"><a href="#"> <i class="fa fa-sign-out-alt"></i>Log out</a></li>
                 </ul>
             </div>
             <div class="content">
                 @yield('content')
-            </div>  
+            </div>
         </div>
         @include('partials/footer')
 </body>

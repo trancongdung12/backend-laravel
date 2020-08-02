@@ -28,3 +28,8 @@ Route::get('admin/product/{id}/edit','Admin\ProductController@edit');
 Route::post('admin/product','Admin\ProductController@store');
 Route::delete('admin/product/{id}','Admin\ProductController@destroy');
 Route::patch('admin/product/','Admin\ProductController@update');
+
+//Message
+Route::get('admin/message','Admin\MessageController@index');
+Route::get('admin/message/{id}','Admin\MessageController@showMessage');
+Route::post('admin/message','Admin\MessageController@sendMessage');

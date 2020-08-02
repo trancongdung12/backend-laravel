@@ -29,3 +29,5 @@ Route::get('/product/{id}','API\ProductController@detail');
 //USER
 Route::get('user/name','API\UserController@getNameByToken');
 Route::get('user/profile','API\UserController@getUserByToken');
+Route::get('user/message','API\UserController@getMessageByToken');
+Route::post('user/message','API\UserController@sendMessage');
