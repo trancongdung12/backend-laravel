@@ -28,7 +28,7 @@
               </tr>
             </thead>
             <tbody>
-              @foreach ($category as $item)   
+              @foreach ($category as $item)
               <tr>
                 <td><b>{{$item->id}}</b></td>
                 <td>{{$item->name}}</td>
@@ -42,10 +42,10 @@
                 </td>
               </tr>
               @endforeach
-              
+
             </tbody>
           </table>
-          
+
      </div>
   </div>
 @endsection
