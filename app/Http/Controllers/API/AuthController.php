@@ -8,20 +8,26 @@ use App\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use \Firebase\JWT\JWT;
+use App\Http\Requests\RegisterRequest;
 class AuthController extends Controller
 {
     function register(Request $request){
         $name = $request->input('name');
         $email = $request->input('email');
         $password = $request->input('password');
-        $user = new User();
-        $user->name = $name;
-        $user->email = $email;
-        $user->image ="/storage/public/default-avatar.png";
-        $user->password = Hash::make($password);
-        $user->save();
+        $existEmail = User::where('email',$email)->get();
         $responseData = array("data"=>null);
-        return response()->json($responseData, 200);
+        if(count($existEmail)>0){
+            return response()->json($responseData, 400);
+        }else{
+            $user = new User();
+            $user->name = $name;
+            $user->email = $email;
+            $user->image ="/storage/public/default-avatar.png";
+            $user->password = Hash::make($password);
+            $user->save();
+            return response()->json($responseData, 200);
+        }
     }
     function login(Request $request){
         $email = $request->input('email');

@@ -12,7 +12,7 @@ class ProductSeeder extends Seeder
      */
     public function run(Faker $faker)
     {
-        for($i=0; $i<4; $i++){
+        for($i=0; $i<8; $i++){
             DB::table('products')->insert([
                 "name"=>"GIÀY SNEAKER ".$i,
                 "category_id"=>1,
@@ -22,7 +22,7 @@ class ProductSeeder extends Seeder
                 "description"=>$faker->text,
                 ]);
         }
-        for($i=0; $i<4; $i++){
+        for($i=0; $i<7; $i++){
             DB::table('products')->insert([
                 "name"=>"GIÀY CONVERSE ".$i,
                 "category_id"=>2,
@@ -32,7 +32,7 @@ class ProductSeeder extends Seeder
                 "description"=>$faker->text,
                 ]);
         }
-        for($i=0; $i<4; $i++){
+        for($i=0; $i<6; $i++){
             DB::table('products')->insert([
                 "name"=>"GIÀY ADIDAS ".$i,
                 "category_id"=>3,
@@ -42,7 +42,7 @@ class ProductSeeder extends Seeder
                 "description"=>$faker->text,
                 ]);
         }
-        for($i=0; $i<4; $i++){
+        for($i=0; $i<5; $i++){
             DB::table('products')->insert([
                 "name"=>"GIÀY VANS ".$i,
                 "category_id"=>4,
