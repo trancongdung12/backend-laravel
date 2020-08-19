@@ -26,4 +26,20 @@ class ProductController extends Controller
         $products = Product::find($id);
         return $products;
     }
+    function search(Request $request){
+        $search = $request->txtsearch;
+        $products = Product::where('name', 'LIKE', '%' . $search. '%')->get();
+        return $products;
+    }
+    function softDesc(Request $request){
+        $search = $request->txtsearch;
+        $products = Product::orderBy('price','DESC')->where('name', 'LIKE', '%' . $search. '%')->get();
+        return $products;
+    }
+    function softAsc(Request $request){
+        $search = $request->txtsearch;
+        $products = Product::orderBy('price','ASC')->where('name', 'LIKE', '%' . $search. '%')->get();
+        return $products;
+
+    }
 }

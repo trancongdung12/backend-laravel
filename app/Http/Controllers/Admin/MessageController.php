@@ -12,14 +12,11 @@ class MessageController extends Controller
          $collection = Message::all()->groupBy('id_seeder');
 
         //    echo "<pre>".json_encode($collection,JSON_PRETTY_PRINT)."</pre>";
-        return view('admin.message.index',['message'=>$collection]);
+         return view('admin.message.index',['message'=>$collection]);
     }
     function showMessage($userId){
     $collection = Message::all()->groupBy('id_seeder');
     $allMessage =  Message::where("id_seeder", $userId)->orwhere("id_recipient", $userId)->get();
-    foreach ($allMessage as $allMessages) {
-                $allMessages->users;
-            }
     //    echo "<pre>".json_encode($allMessage,JSON_PRETTY_PRINT)."</pre>";
     return view('admin.message.send',['message'=>$collection,'allmessage'=>$allMessage,'userId'=>$userId]);
 

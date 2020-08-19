@@ -17,6 +17,7 @@ class AuthController extends Controller
         $user = new User();
         $user->name = $name;
         $user->email = $email;
+        $user->image ="/storage/public/default-avatar.png";
         $user->password = Hash::make($password);
         $user->save();
         $responseData = array("data"=>null);
