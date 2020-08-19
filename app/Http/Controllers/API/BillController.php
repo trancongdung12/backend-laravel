@@ -16,6 +16,7 @@ class BillController extends Controller
         $name = $request->name;
         $phone = $request->phone;
         $email = $request->email;
+        $total = $request->total;
         $address = $request->address;
         $cart = $request->cart;
 
@@ -23,6 +24,7 @@ class BillController extends Controller
         $bills->user_id = $userId;
         $bills->name = $name;
         $bills->phone = $phone;
+        $bills->total = $total;
         $bills->email = $email;
         $bills->address = $address;
         $bills->cart = $cart;

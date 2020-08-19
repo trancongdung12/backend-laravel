@@ -21,6 +21,7 @@ class CreateBillsTable extends Migration
             $table->string('phone');
             $table->string('email');
             $table->string('address');
+            $table->string('total');
             $table->longText('cart');
             $table->timestamps();
         });

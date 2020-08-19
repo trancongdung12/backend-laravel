@@ -30,7 +30,8 @@
                 <ul class="side-content">
                     <li class="side-item"><a href="/"> <i class="fa fa-tachometer-alt"></i>Dashboard</a></li>
                     <li class="side-item"><a href="/admin/product"> <i class="far fa-keyboard"></i>Product</a></li>
-                    <li class="side-item"><a href="/admin/category"> <i class="far fa-keyboard"></i>Category</a></li>
+                    <li class="side-item"><a href="/admin/category"> <i class="fa fa-align-center"></i>Category</a></li>
+                    <li class="side-item"><a href="/admin/bill"> <i class="far fa-address-card"></i>Bill</a></li>
                     <li class="side-item"><a href="/admin/message"> <i class="far fa-comments"></i>Message</a></li>
                     <li class="side-item"><a href="#"> <i class="fa fa-sign-out-alt"></i>Log out</a></li>
                 </ul>

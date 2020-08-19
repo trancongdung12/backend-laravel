@@ -12,9 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('admin.dashboard');
-});
+Route::get('/','Admin\DashboardController@index');
 //Category
 Route::get('admin/category','Admin\CategoryController@index');
 Route::get('admin/category/{id}/edit','Admin\CategoryController@edit');
@@ -33,3 +31,6 @@ Route::patch('admin/product/','Admin\ProductController@update');
 Route::get('admin/message','Admin\MessageController@index');
 Route::get('admin/message/{id}','Admin\MessageController@showMessage');
 Route::post('admin/message','Admin\MessageController@sendMessage');
+
+//Bill
+Route::get('admin/bill','Admin\billController@index');
