@@ -16,7 +16,7 @@ class ProductSeeder extends Seeder
             DB::table('products')->insert([
                 "name"=>"GIÀY SNEAKER ".$i,
                 "category_id"=>1,
-                "image"=>"/storage/public/img_1.jpg",
+                "image"=>"https://cf.shopee.vn/file/46469a35fbcf8d659b5842940396843b",
                 "price"=>$faker->numberBetween($min = 1000000, $max = 2000000),
                 "quantity"=>$faker->numberBetween(1,50),
                 "description"=>$faker->text,
@@ -26,7 +26,7 @@ class ProductSeeder extends Seeder
             DB::table('products')->insert([
                 "name"=>"GIÀY CONVERSE ".$i,
                 "category_id"=>2,
-                "image"=>"/storage/public/img_2.jpg",
+                "image"=>"https://www.converse.com.vn/pictures/catalog/products/women-ho18.png",
                 "price"=>$faker->numberBetween($min = 1000000, $max = 2000000),
                 "quantity"=>$faker->numberBetween(1,50),
                 "description"=>$faker->text,
@@ -36,7 +36,7 @@ class ProductSeeder extends Seeder
             DB::table('products')->insert([
                 "name"=>"GIÀY ADIDAS ".$i,
                 "category_id"=>3,
-                "image"=>"/storage/public/img_3.jpg",
+                "image"=>"https://i.pinimg.com/originals/31/69/ce/3169ce25074e99b427b71fa68315a431.png",
                 "price"=>$faker->numberBetween($min = 1000000, $max = 2000000),
                 "quantity"=>$faker->numberBetween(1,50),
                 "description"=>$faker->text,
@@ -46,7 +46,7 @@ class ProductSeeder extends Seeder
             DB::table('products')->insert([
                 "name"=>"GIÀY VANS ".$i,
                 "category_id"=>4,
-                "image"=>"/storage/public/img_4.jpg",
+                "image"=>"https://product.hstatic.net/1000296292/product/167139_00.png_8fdd24f1b07848fb84495dced8fa6c1d_master.png",
                 "price"=>$faker->numberBetween($min = 1000000, $max = 2000000),
                 "quantity"=>$faker->numberBetween(1,50),
                 "description"=>$faker->text,
